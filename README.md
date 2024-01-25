@@ -1,6 +1,8 @@
 # lokalize_test
 
-Lokalise builder problem test project
+Lokalise builder problem test project.
+It may not run properly but also does not need to be run in order to understand the issue. 
+
 
 ## Getting Started
 
