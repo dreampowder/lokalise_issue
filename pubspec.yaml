@@ -1,0 +1,158 @@
+name: test_app
+description: "Emma Sleep App"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+
+  #Application Code
+  dartz: ^0.10.1
+  get_it: ^7.6.7
+  flutter_bloc: ^8.1.3
+  go_router: ^13.0.1
+
+  #UI Related Dependencies
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.1
+  smooth_page_indicator: ^1.1.0
+  syncfusion_flutter_charts: ^23.1.43 # do not change this version or aliens will come after you
+  shimmer: ^3.0.0
+  video_player: ^2.8.2
+  flutter_carousel_widget: ^2.2.0
+  dotted_line: ^3.2.2
+
+  #Localization
+  intl: ^0.19.0
+  lokalise_flutter_sdk: ^1.2.1
+
+  # SSO Authentication
+  amplify_flutter: ^1.6.1
+  amplify_auth_cognito: ^1.6.1
+
+  # Logging / Error Tracking
+  sentry_flutter: ^7.14.0
+  sentry_dio: ^7.14.0
+  sentry_logging: ^7.14.0
+  logging: ^1.2.0
+  logger: ^2.0.2+1
+
+  # Misc
+  package_info_plus: ^5.0.1
+  url_launcher: ^6.2.4
+  collection: ^1.18.0
+  app_settings: ^5.1.1
+  permission_handler: ^11.2.0
+
+  # Local Data
+  flutter_secure_storage: ^9.0.0
+
+  # Networking
+  dio: ^5.4.0
+  flutter_pretty_dio_logger: ^3.0.0
+  freezed_annotation: ^2.4.1
+
+  # Analytics and Tracking
+  mixpanel_flutter: ^2.2.0
+  onesignal_flutter: ^5.0.4
+  appsflyer_sdk: ^6.12.2
+  device_info_plus: ^9.1.1
+  ip_country_lookup: ^1.0.2
+  usercentrics_sdk: ^2.11.2
+  facebook_app_events: ^0.19.0
+
+  # Payments
+  purchases_flutter: ^6.16.1
+
+
+
+dependency_overrides:
+  intl: ^0.19.0
+  package_info_plus: ^5.0.1
+  device_info_plus: ^9.1.1
+  win32: ^5.2.0 #Required for asleep sdk integration, not used in anywhere, don't remove.
+  meta: ^1.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  flutter_gen_runner: ^5.4.0
+  go_router_builder: ^2.4.1
+  freezed: ^2.4.6
+  analyzer: ^6.4.0
+  meta: ^1.11.0
+
+# Settings for flutter gen. In order to generate assets and relevant things, run
+# dart run build_runner build --delete-conflicting-outputs
+flutter_gen:
+  output: lib/generated/
+
+  assets:
+    enabled: true
+  integrations:
+    flutter_svg: true
+
+  fonts:
+    enabled: true
+    outputs:
+      class_name: AppFonts
+
+  colors:
+    enabled: true
+    inputs:
+      - assets/colors/colors.xml
+    outputs:
+      class_name: AppColors
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/vectors/
+    - assets/videos/
+
+  fonts:
+    - family: TiemposHeadline
+      fonts:
+        - asset: assets/fonts/TiemposHeadline-Semibold.otf
+        - asset: assets/fonts/TiemposHeadline-Bold.otf
+        - asset: assets/fonts/TiemposHeadline-Medium.otf
+        - asset: assets/fonts/TiemposHeadline-Regular.otf
+    - family: CircularStd
+      fonts:
+        - asset: assets/fonts/Circular-std-medium.ttf
+    - family: PSTMailSansTrial
+      fonts:
+        - asset: assets/fonts/PSTMailSansTrial-SemiBold.otf
+        - asset: assets/fonts/PSTMailSansTrial-Bold.otf
+        - asset: assets/fonts/PSTMailSansTrial-Light.otf
+        - asset: assets/fonts/PSTMailSansTrial-Medium.otf
+        - asset: assets/fonts/PSTMailSansTrial-Regular.otf
+        - asset: assets/fonts/PSTMailSansTrial-Black.otf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Black.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+        - asset: assets/fonts/Inter-ExtraLight.ttf
+        - asset: assets/fonts/Inter-Light.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset: assets/fonts/Inter-Thin.ttf
+
+##Default localizely supprt, if enabled, it will auto generate S.of(..) style localizations
+flutter_intl:
+  enabled: false

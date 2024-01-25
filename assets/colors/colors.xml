@@ -1,0 +1,11 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="darkOrange">#FF6900</color>
+    <color name="dark">#1F1F1F</color>
+    <color name="lightOrange">#FE7E25</color>
+    <color name="yellow">#FFD260</color>
+    <color name="lightYellow">#FFF3D7</color>
+    <color name="darkBeige">#FAE5CE</color>
+    <color name="beige">#FFF6EC</color>
+</resources>

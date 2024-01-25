@@ -1,0 +1,6 @@
+output-class: S
+arb-dir: lib/l10n
+output-dir: lib/generated
+output-localization-file: l10n.dart
+preferred-supported-locales: [ en_US ]
+synthetic-package: false
